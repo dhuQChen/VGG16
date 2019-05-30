@@ -5,7 +5,7 @@ import cv2
 import os
 
 
-def test(path):
+def try_a_try(path):
     x = tf.placeholder(tf.float32, shape=[None, 224, 224, 3], name='input')
     keep_prob = tf.placeholder(tf.float32)
     output = VGG16(x, keep_prob, 17)
@@ -31,6 +31,6 @@ def test(path):
     sess.close()
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     path = './Example/'
-    test(path)
+    try_a_try(path)
